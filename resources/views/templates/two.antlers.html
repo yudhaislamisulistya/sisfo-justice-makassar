@@ -1,0 +1,40 @@
+        <!--Page Header Start-->
+        <section class="page-header clearfix"
+            style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+            <div class="container">
+                <div class="page-header__inner text-center clearfix">
+                    <ul class="thm-breadcrumb">
+                        <li><a href="index-main.html">Home</a></li>
+                    </ul>
+                    <h2>{{ title }}</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+<!--Projects One Start-->
+<section class="projects-one projects-one--two projects-one--two--projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="projects-one--two--projects__wrapper">
+                    <div class="row">
+                        <!--Start Single Projects One-->
+                        {{ assets container="assets" limit="10" sort="rating" }}
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="projects-one__single wow fadeInUp" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="projects-one__single-img">
+                                        <img src="{{url}}" alt="{{alt}}" />
+                                        <div class="overlay-content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ /assets }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Projects One End-->

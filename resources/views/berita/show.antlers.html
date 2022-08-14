@@ -1,0 +1,42 @@
+        <!--Page Header Start-->
+        <section class="page-header clearfix"
+            style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+            <div class="container">
+                <div class="page-header__inner text-center clearfix">
+                    <ul class="thm-breadcrumb">
+                        <li><a href="index-main.html">Home</a></li>
+                    </ul>
+                    <h2>{{ title }}</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--News Sidebar Start-->
+<section class="news-sidebar">
+    <div class="container">
+        <div class="row">
+            <!--Start News Sidebar Laft-->
+            <div class="col-xl-8 col-lg-7">
+                <div class="news-sidebar__left">
+
+                    <div class="news-sidebar__blockquote">
+                        <blockquote>
+                            <div class="icon">
+                                <img src="{{ site_url:url }}assets-new/images/icon/icon-quotation-mark.png"
+                                    alt="" />
+                            </div>
+                            <div class="konten text-center">
+                                <img src="{{foto}}" class="rounded mt-5" alt="">
+                                {{ konten }}
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!--End News Sidebar Laft-->
+            {{ partial:_sidebar }}
+        </div>
+    </div>
+</section>
+<!--News Sidebar End-->

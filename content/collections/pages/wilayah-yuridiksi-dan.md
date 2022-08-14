@@ -2,9 +2,9 @@
 id: 96178afb-0eb8-4c2e-8ea7-a293c1750678
 blueprint: pengantar_ketua_pengadilan
 title: 'Wilayah Yuridiksi dan Fungsi Pengadilan'
-konten: '<p>Perlu Data...</p>'
+konten: "<p>Wilayah Pengadilan Militer III-16 Makassar meliputi Propinsi Sulawesi Selatan, Propinsi Sulawesi Barat dan Propinsi Sulawesi Tenggara terdiri dari 31 Kabupaten dan Kotamadya dengan jumlah luas meliputi 123-198 Kilo Meter dengan posisi letak terpisahkan oleh Teluk Bone dan beberapa daerah Kabupaten meliputi :</p><p><strong>1. Jajaran Kodam :</strong>\_\_ \_<br>\_\_ \_1. Kodim 1408/BS<br>\_\_ \_2. Yonif\_ 700/Raider<br>\_\_\_ 3. Yon\_ Kavaleri 10/Serbu<br>\_\_\_ 4. Yon Armed 6-76 Tarik Tamarunang<br>\_\_\_ 5. Yon Zipur 8 SMG<br>\_\_\_ 6. Rai Arhanudri 141/BS</p><p><strong>2. Korem 141/TP :</strong><br>\_\_\_ 1. Denpom VII/3<br>\_\_\_ 2. Kodim 1406/Wajo<br>\_\_\_ 3. Kodim 1407/Bone<br>\_\_\_ 4. Kodim 1409/Gowa<br>\_\_\_ 5. Kodim 1410/Bantaeng<br>\_\_\_ 6. Kodim 1411/Bulukumba<br>\_\_\_ 7. Kodim 1415/Selayar<br>\_\_\_ 8. Kodim 1422/Maros<br>\_\_\_ 9. Kodim 1423/Soppeng<br>\_\_\_ 10. Kodim 1424/Sinjai<br>\_\_\_ 11. Kodim 1425/Jeneponto<br>\_\_\_ 12. Kodim 1426/Takalar<br>\_\_\_ 13. Yonif 726/Tml</p><p><strong>3. Korem 142/TTG :</strong><br>\_\_ \_1. Denpom VII/4<br>\_\_ \_2. Kodim 1401/Majene<br>\_\_ \_3. Kodim 1402/Polmas<br>\_\_\_ 4. Kodim 1403/Sawerigading<br>\_\_\_ 5. Kodim 1404/Pinrang<br>\_\_\_ 6. Kodim 1405/Mlts<br>\_\_\_ 7. Kodim 1414/Tator<br>\_\_\_ 8. Kodim 1418/Mamuju<br>\_\_\_ 9. Kodim 1419/Enrekang<br>\_\_\_ 10. Kodim 1420/Sidrap<br>\_\_\_ 11. Kodim 1421/Pangkep<br>\_\_\_ 12. Yonif 721/Mks</p><p><strong>4. Korem 143/HO</strong><br>\_\_\_ 1. Denpom VII/5<br>\_\_\_ 2. Kodim 1412/Kolaka<br>\_\_\_ 3. Kodim 1413/Bau-Bau<br>\_\_\_ 4. Kodim 1416/Raha<br>\_\_\_ 5. Kodim 1417/Kendari<br>\_\_\_ 6. Yonif 725/Wrg</p><p><strong>5. Brigade :</strong><br>\_\_\_ 1. Brigif Linud 3/Tbs<br>\_\_\_ 2. Yonif 431/SSP<br>\_\_\_ 3. Yonif 432/WJS<br>\_\_\_ 4. Yonif 433/JS</p><p><strong>6. Jajaran TNI AL</strong><br>\_\_ \_1. Lantamal VI<br>\_\_ \_2. Lanal Kendari</p><p><strong>7. Jajaran TNI AU</strong><br>\_\_ \_1. Koops AU II<br>\_\_ \_2. Lanud Hasanuddin<br>\_\_ \_3. Lanud Wolter Monginsidi<br>\_\_ \_4. Paskhas 466</p><p><strong>8. Mabes TNI</strong><br>\_\_ \_1. Kosekhanudnas II Makassar<br>\_\_ \_2. Pengadilan Militer III-16 Makassar.<br>\_\_ \_3. Oditurat Militer III-16 Makassar.<br>\_\_ \_4. Masmil</p>"
 template: templates/one
-published: true
 updated_by: b508b92f-3365-4525-87cb-07d49957fd67
-updated_at: 1660406820
+updated_at: 1660468245
+published: true
 ---

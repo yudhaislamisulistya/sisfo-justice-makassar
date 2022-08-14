@@ -1,0 +1,55 @@
+        <!--Page Header Start-->
+        <section class="page-header clearfix"
+            style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+            <div class="container">
+                <div class="page-header__inner text-center clearfix">
+                    <ul class="thm-breadcrumb">
+                        <li><a href="index-main.html">Home</a></li>
+                    </ul>
+                    <h2>{{ title }}</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <section class="blog-one blog-one--news">
+			<div class="blog-one__bg wow slideInDown" data-wow-delay="100ms" data-wow-duration="2500ms"></div>
+			<div class="container">
+				<div class="row">
+					<!--Start Single Blog One-->
+                    {{collection:berita paginate="10" as="posts" status:not_in="draft"}}
+                    {{ if no_results }}
+                        <p class="text-center">Data Tidak Ditemukan</p>
+                    {{ /if }}
+                    {{ posts }}
+                    <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="blog-one__single">
+							<div class="blog-one__single-img">
+								<img src="{{foto}}" alt="" />
+								<div class="date-box">
+									<span>{{date}}</span>
+								</div>
+								<div class="overlay-icon">
+									<a href="news-details.html"><span class="icon-plus"></span></a>
+								</div>
+							</div>
+
+							<div class="blog-one__single-content">
+								<h2><a href="{{ slug }}">{{title}}</a></h2>
+							</div>
+						</div>
+					</div>
+                    {{ /posts }}
+                    {{ paginate }}
+                        <div class="text-center">
+                            <a href="{{ prev_page }}">⬅ Sebelumnya</a>
+                            {{ current_page }} of {{ total_pages }} halaman
+                            (ada {{ total_items }} berita)
+                            <a href="{{ next_page }}">Selanjutnya ➡</a>
+                        </div>
+                    {{ /paginate }}
+                    {{/collection:berita}}
+					<!--End Single Blog One-->
+				</div>
+			</div>
+		</section>
