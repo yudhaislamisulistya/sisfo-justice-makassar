@@ -1,0 +1,23 @@
+---
+id: 8707930e-1466-47aa-85f2-21cad2ce82ff
+blueprint: berita
+title: 'Upacara HUT MA RI Ke-77'
+konten:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: textAlign
+            attrs:
+              align: justify
+        text: 'Makassar - Humas, pada hari kamis tanggal 19 Agustus 2021 anggota Pengadilan Militer III-16 Makassar mengikuti Upacara Peringatan Hari Ulang Tahun Mahkamah Agung RI ke 76 di Ruang sidang lantai 2 Pengadilan militer III-16 Makassar'
+foto: screenshot_20210831-115729_gallery.jpeg
+penulis:
+  - b508b92f-3365-4525-87cb-07d49957fd67
+published: true
+updated_by: b508b92f-3365-4525-87cb-07d49957fd67
+updated_at: 1660439851
+---

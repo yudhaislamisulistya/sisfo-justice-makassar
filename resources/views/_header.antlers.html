@@ -1,0 +1,89 @@
+<header class="main-header main-header--one  clearfix">
+    <div class="main-header--one__wrapper">
+        <div class="main-header--one__top clearfix">
+            <div class="auto-container">
+
+                <div class="main-header--one__top-left">
+                    <div class="text">
+                        <p>Pengadilan Militer III-16 Makassar</p>
+                    </div>
+                    <div class="social-link clearfix">
+                        <ul>
+                            <li><a href="https://web.facebook.com/dilmilmakassar/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/dilmil_makassar/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main-header--one__top-right clearfix">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <p><a href="mailto:makassar@dilmil.org">makassar@dilmil.org</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-clock"></i>
+                            </div>
+                            <div class="text">
+                                <p>Senin - Sabtu</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header--one__bottom clearfix">
+            <div class="auto-container">
+                <div class="main-header--one__bottom-inner">
+                    <nav class="main-menu main-menu--1">
+                        <div class="main-menu__inner">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+
+
+                            <div class="main-header--one__bottom-left">
+                                <ul class="main-menu__list">
+                                    {{ nav:collection:pages include_home="true" redirect="true"}}
+                                        {{ if children }}
+                                        <li class="dropdown">
+                                            <a href="#">{{ title }}</a>
+                                            <ul>
+                                                {{ *recursive children* }}
+                                            </ul>
+                                        </li>
+                                        {{ else }}
+                                            <li><a href="{{ url }}">{{ title }}</a></li>
+                                        {{ /if }}
+                                    {{ /nav:collection:pages }}
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="main-header--one__bottom-right clearfix">
+                        <div class="search-cart">
+                            <a href="#" class="search search-toggler"><span
+                                    class="icon-magnifying-glass"></span></a>
+                        </div>
+                        <div class="contact-box">
+                            <div class="icon">
+                                <span class="icon-phone-call-2"></span>
+                            </div>
+                            <div class="text">
+                                <p>Setiap Saat</p>
+                                <a href="tel:123456789">0411 5158080</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

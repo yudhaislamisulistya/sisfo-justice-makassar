@@ -1,0 +1,41 @@
+            <!--Start News Sidebar Sidebar-->
+            <div class="col-xl-4 col-lg-5">
+                <div class="sidebar">
+                    <div class="sidebar__single sidebar__search wow fadeInUp animated animated animated"
+                        data-wow-delay="0.1s" data-wow-duration="1200m">
+                        <form action="#" class="sidebar__search-form">
+                            <input type="search" placeholder="Search here">
+                            <button type="submit"><span class="icon-search"></span></button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar__single sidebar__latest-posts wow fadeInUp animated animated animated"
+                        data-wow-delay="0.2s" data-wow-duration="1200m">
+                        <div class="title">
+                            <h2>Kepala Pengadilan</h2>
+                            {{ collection:lainnya title:contains="Kepala Pengadilan Militer III-16 Makassar" }}
+                                <img class="rounded" width="100%" src="{{foto}}" alt="">
+                                <h2 class="text-center">{{nama}}</h2>
+                            {{ /collection:lainnya }}
+                        </div>
+                    </div>
+
+                    <div class="sidebar__single sidebar__latest-posts wow fadeInUp animated animated animated"
+                        data-wow-delay="0.2s" data-wow-duration="1200m">
+                        <div class="title">
+                            <h2>Berita Terbaru</h2>
+                        </div>
+                        <ul class="sidebar__latest-posts-list">
+                            {{collection:berita limit="10"}}
+                                <li class="sidebar__latest-posts-list-item">
+                                    <div class="title">
+                                        <h4><a href="{{slug}}">{{title}}</h4>
+                                            <p class="mt-1">{{date}}</p>
+                                    </div>
+                                </li>
+                            {{/collection:berita}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--End News Sidebar Sidebar-->

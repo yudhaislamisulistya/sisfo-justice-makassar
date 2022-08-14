@@ -1,0 +1,368 @@
+<div class="stricky-header stricked-menu main-menu">
+    <div class="sticky-header__content">
+
+    </div><!-- /.sticky-header__content -->
+</div><!-- /.stricky-header -->
+
+<!--Main Slider Start-->
+<section class="main-slider main-slider-one">
+    <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true, "effect": "fade", "pagination": {
+    "el": "#main-slider-pagination",
+    "type": "bullets",
+    "clickable": true
+    },
+    "navigation": {
+    "nextEl": "#main-slider__swiper-button-next",
+    "prevEl": "#main-slider__swiper-button-prev"
+    },
+    "autoplay": {
+    "delay": 7000
+    }}'>
+
+        <div class="swiper-wrapper">
+            <!--Start Single Swiper Slide-->
+            {{ collection:slider }}
+            <div class="swiper-slide">
+                <div class="image-layer"
+                    style="background-image: url({{slider}});"></div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main-slider-inner">
+                                <div class="main-slider__content">
+                                    <span class="main-slider-tagline">Pengadilan Militer III-16 Makassar</span>
+                                    <h2 class="main-slider__title">Selamat Datang <br> PM III-16 Makassar<span><span
+                                                class="leaf"><img src="assets-new/images/resources/leaf.png"
+                                                    alt="" /></span>Farm</span></h2>
+                                    <p class="main-slider__text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ /collection:slider }}
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-pagination" id="main-slider-pagination"></div>
+
+        <div class="main-slider__nav">
+            <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                <span class="icon-right-arrow-2"></span>
+            </div>
+            <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                <span class="icon-right-arrow-2"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Main Slider End-->
+
+
+<!--About One Start-->
+<section class="about-one">
+    <div class="about-one__bg wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+        <img class="float-bob-y" src="assets-new/images/backgrounds/about-v1-bg.png" alt="" />
+    </div>
+    {{ collection:lainnya title:contains="Kepala Pengadilan Militer III-16 Makassar" }}
+    <div class="container">
+        <div class="row">
+            <!--Start About One Left-->
+            <div class="col-xl-6">
+                <div class="about-one__left">
+                    <div class="about-one__left-img">
+                        <div class="about-one__left-img-inner">
+                            <img src="{{foto}}" alt="" />
+                        </div>
+                    </div>
+                    <div class="about-one__left-overlay wow slideInLeft" data-wow-delay="100ms"
+                        data-wow-duration="1500ms">
+                        <div class="title">
+                            <h3>{{ nama }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End About One Left-->
+
+            <!--Start About One Content-->
+            <div class="col-xl-6">
+                <div class="about-one__content">
+                    <div class="sec-title">
+                        <div class="icon">
+                            <img src="assets-new/images/resources/sec-title-icon1.png" alt="" />
+                        </div>
+                        <span class="sec-title__tagline">Pengantar</span>
+                        <h2 class="sec-title__title mb-2">Ketua Pengadilan</h2>
+                        {{ konten }}
+                    </div>
+
+
+                    <div class="about-one__content-video-box">
+                        <div class="about-one__content-video-box-img-wrapper">
+                            <div class="about-one__content-video-box-img">
+                                <img src="assets-new/images/resources/about-v1-video-img.png" alt="" />
+                                <div class="icon">
+                                    <a class="video-popup wow zoomIn animated animated animated"
+                                        data-wow-delay="300ms" data-wow-duration="1500ms" title=" Video"
+                                        href="../../external.html?link=https://www.youtube.com/watch?v=-NYu5hYzXZg">
+                                        <span class="icon-play-button-1"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- /.about-one__content-video-box-img-wrapper -->
+                        <div class="about-one__content-video-box-title">
+                            <p>Watch our video</p>
+                            <h3>Video Profil Pengadilan Militer III-16 Makassar</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End About One Content-->
+        </div>
+    </div>
+    {{ /collection:lainnya }}
+</section>
+<!--About One End-->
+
+
+<!--Features One Start-->
+<section class="features-one clearfix">
+    <div class="container">
+        <div class="row">
+            <!--Start Single Features One-->
+            {{ collection:app }}
+                <div class="col-xl-4 col-lg-4 wow fadeInUp animated animated">
+                    <div class="features-one__single">
+                        <div class="features-one__single-img" style="overflow: hidden; background-size: cover; background-position: center;">
+                            <img height="100%" src="{{foto}}" alt="" />
+                            <div class="features-one__single-title text-center">
+                                <h3><a href="#">{{title}}</h3>
+                            </div>
+                        </div>
+                        <a href="{{url}}" class="features-one__single__more">
+                            <span class="icon-right-arrow-2"></span>
+                        </a><!-- /.feature-one__single__more -->
+                    </div>
+                </div>
+            {{ /collection:app }}
+            <!--End Single Features One-->
+        </div>
+    </div>
+</section>
+<!--Features One End-->
+
+<!--Video One Start-->
+<section class="video-one jarallax clearfix" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+    style="background-image: url(assets-new/images/backgrounds/video-one-bg.jpeg);">
+    <div class="video-one-border"></div>
+    <div class="video-one-border video-one-border-two"></div>
+    <div class="video-one-border video-one-border-three"></div>
+    <div class="video-one-border video-one-border-four"></div>
+    <div class="video-one-border video-one-border-five"></div>
+    <div class="video-one-border video-one-border-six"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="video-one__wrpper">
+                    <div class="video-one__left">
+                        <div class="video-one__leaf"></div><!-- /.video-one__leaf -->
+                        <h2 class="video-one__title">Profil Pembangunan Zona Integritas Pengadilan Militer III-16 Makassar</h2>
+                    </div>
+                    <div class="video-one__right">
+                        <div class="icon wow zoomIn" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <a class="video-popup" title=" Video"
+                                href="../../external.html?link=https://www.youtube.com/watch?v=WDwRlyvK2mQ&feature=emb_imp_woyt">
+                                <span class="icon-play-button-1"></span>
+                            </a>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                        </div>
+                        <div class="title">
+                            <h2>Watch the video</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Video One End-->
+
+
+
+
+<!--Projects One Start-->
+<section class="projects-one">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <div class="icon">
+                <img src="assets-new/images/resources/sec-title-icon1.png" alt="">
+            </div>
+            <span class="sec-title__tagline">kami</span>
+            <h2 class="sec-title__title">Personil Kami</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="projects-one__carousel owl-carousel owl-theme owl-dot-type1">
+                    <!--Start Single Projects One-->
+                    {{ collection:anggota }}
+                    <div class="projects-one__single wow fadeInUp" data-wow-delay="0ms"
+                        data-wow-duration="1500ms">
+                        <div class="projects-one__single-img">
+                            <img src="{{foto}}" alt="" />
+                            <div class="overlay-content">
+                                <!-- <p>Agriculture</p> -->
+                                <h3><a href="projects#">{{title}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /collection:anggota }}
+                    <!--End Single Projects One-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Projects One End-->
+
+
+
+
+<!--Blog One Start-->
+<section class="blog-one">
+    <div class="blog-one__bg wow slideInDown" data-wow-delay="100ms" data-wow-duration="2500ms"></div>
+    <div class="blog-one__shape"></div><!-- /.blog-one__shape -->
+    <div class="container">
+        <div class="sec-title text-center">
+            <div class="icon">
+                <img src="assets-new/images/resources/sec-title-icon1.png" alt="">
+            </div>
+            <span class="sec-title__tagline">dari Blog</span>
+            <h2 class="sec-title__title">Berita dan Artikel</h2>
+        </div>
+        <div class="row">
+            <!--Start Single Blog One-->
+            {{ collection:berita limit="3" }}
+                <div class="col-xl-4 col-lg-4  wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__single-img">
+                            <img src="{{foto}}" alt="" />
+                            <div class="date-box">
+                                <span>{{date}}</span>
+                            </div>
+                            <div class="overlay-icon">
+                                <a href="news-details.html"><span class="icon-plus"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-one__single-content">
+                            <h2><a href="{{ slug }}">{{title}}</a></h2>
+                        </div>
+                    </div>
+                </div>
+            {{ /collection:berita }}
+            <!--End Single Blog One-->
+            <div>
+                <a class="thm-btn comment-form__btn" href="">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog One End-->
+
+<section class="contact-one">
+    <div class="container">
+        <div class="sec-title text-center">
+            <div class="icon">
+                <img src="assets-new/images/resources/sec-title-icon1.png" alt="">
+            </div>
+            <span class="sec-title__tagline">Hubungi Kami</span>
+            <h2 class="sec-title__title">Lihat untuk dapat selalu terhubung dengan kami</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-one__content">
+                    <iframe style="border-radius: 20px;" width="550" height="450" frameborder="0" scrolling="no" marginheight="100" marginwidth="100"
+					src="https://maps.google.com/maps?q=Pengadilan%20Militer%20III-16%20Makassar&#038;t=m&#038;z=13&#038;output=embed&#038;iwloc=near"
+					title="London Eye, London, United Kingdom"
+					aria-label="London Eye, London, United Kingdom"
+			></iframe>
+                </div><!-- /.contact-one__content -->
+            </div><!-- /.col-lg-6 -->
+            
+            <div class="col-lg-6">
+                <form action="#"
+                    class="contact-one__form comment-one__form contact-form-validated" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="comment-form__input-box">
+                                <input type="text" placeholder="Your name" name="name">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="comment-form__input-box">
+                                <input type="email" placeholder="Email address" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="comment-form__input-box">
+                                <textarea name="message" placeholder="Write message"></textarea>
+                            </div>
+                            <button type="submit" class="thm-btn comment-form__btn">Kirim Pesan</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="result"></div><!-- /.result -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.contact-one -->
+
+<!--Company Logos One Start-->
+<section class="company-logos-one">
+    <div class="container text-center">
+        <div class="thm-swiper__slider swiper-container text-center" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+        "0": {
+            "spaceBetween": 20,
+            "slidesPerView": 2
+        },
+        "375": {
+            "spaceBetween": 20,
+            "slidesPerView": 2
+        },
+        "575": {
+            "spaceBetween": 20,
+            "slidesPerView": 3
+        },
+        "767": {
+            "spaceBetween": 30,
+            "slidesPerView": 4
+        },
+        "991": {
+            "spaceBetween": 40,
+            "slidesPerView": 5
+        },
+        "1199": {
+            "spaceBetween": 40,
+            "slidesPerView": 5
+        }
+    }}'>
+            <div class="swiper-wrapper justify-content-center">
+                <div class="swiper-slide">
+                    <img src="assets/logo-mahkamah-agung.png" alt="">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="assets/logo_pengadilan_militer_makassar-removebg-preview.png" alt="">
+                </div><!-- /.swiper-slide -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Company Logos One End-->
