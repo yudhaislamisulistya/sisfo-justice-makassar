@@ -1,0 +1,59 @@
+{
+  "name": "optimoapps/statamic-bard-text-align",
+  "description": "Statamic Bard text align",
+  "keywords": [
+    "statamic",
+    "bard",
+    "text-align"
+  ],
+  "autoload": {
+    "psr-4": {
+      "OptimoApps\\BardTextAlign\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OptimoApps\\BardTextAlign\\Tests\\": "tests"
+    }
+  },
+  "homepage": "https://optimoapps.com",
+  "license": "proprietary",
+  "type": "statamic-addon",
+  "authors": [
+    {
+      "name": "sathish.thi@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "statamic/cms": "^3.0.14"
+  },
+  "require-dev": {
+    "orchestra/testbench": "4.*|5.*",
+    "phpunit/phpunit": "^8.4|^9.0"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "support": {
+    "email": "info@optimoapps.com"
+  },
+  "extra": {
+    "statamic": {
+      "name": "Statamic Bard Text Align",
+      "description": "Text align command for bard"
+    },
+    "laravel": {
+      "providers": [
+        "OptimoApps\\BardTextAlign\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

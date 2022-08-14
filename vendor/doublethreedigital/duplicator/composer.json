@@ -1,0 +1,52 @@
+{
+    "name": "doublethreedigital/duplicator",
+    "description": "Duplicate Entries in the Statamic 3 Control Panel",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "DoubleThreeDigital\\Duplicator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DoubleThreeDigital\\Duplicator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Duplicator",
+            "description": "Duplicate Entries in the Statamic 3 Control Panel"
+        },
+        "laravel": {
+            "providers": [
+                "DoubleThreeDigital\\Duplicator\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "statamic/cms": "3.2.* || 3.3.*"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^4.2 || ^5.0 || ^6.1",
+        "orchestra/testbench": "^5.0 || ^6.0 || ^7.0"
+    },
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix ./src"
+        ],
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "minimum-stability": "beta"
+}
