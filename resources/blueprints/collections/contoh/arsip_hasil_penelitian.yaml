@@ -1,0 +1,80 @@
+title: 'Arsip Hasil Penelitian'
+sections:
+  main:
+    display: Utama
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: instansi
+        field:
+          input_type: text
+          antlers: false
+          display: Instansi
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: tanggal_persetujuan
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Tanggal Persetujuan'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: tujuan_penelitian
+        field:
+          input_type: text
+          antlers: false
+          display: 'Tujuan Penelitian'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: judul
+        field:
+          input_type: text
+          antlers: false
+          display: Judul
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: situs
+        field:
+          input_type: text
+          antlers: false
+          display: Situs
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true

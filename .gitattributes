@@ -1,6 +1,1 @@
-# * text=auto
-# *.css linguist-vendored
-# *.scss linguist-vendored
-# *.js linguist-vendored
-# CHANGELOG.md export-ignore
-# /.github export-ignore
+*.css, *.js, *.html linguist-detectable=false

@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::statamic('example', 'example-view', [
-//    'title' => 'Example'
-// ]);
+Route::statamic('form-pengaduan', 'form-pengaduan', [
+    'title' => 'Form Pengaduan'
+]);
+
