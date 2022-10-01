@@ -1,3 +1,26 @@
+<style>
+    input[name="name"], input[name="email"], textarea[name="pesan"] {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+    }
+</style>
 <div class="stricky-header stricked-menu main-menu">
     <div class="sticky-header__content">
 
@@ -34,9 +57,7 @@
                             <div class="main-slider-inner">
                                 <div class="main-slider__content">
                                     <span class="main-slider-tagline">Pengadilan Militer III-16 Makassar</span>
-                                    <h2 class="main-slider__title">Selamat Datang <br> PM III-16 Makassar<span><span
-                                                class="leaf"><img src="assets-new/images/resources/leaf.png"
-                                                    alt="" /></span>Farm</span></h2>
+                                    <h2 class="main-slider__title">Selamat Datang <br>di Pengadilan III-16 Makassar<span></h2>
                                     <p class="main-slider__text"></p>
                                 </div>
                             </div>
@@ -299,29 +320,33 @@
             </div><!-- /.col-lg-6 -->
             
             <div class="col-lg-6">
-                <form action="#"
-                    class="contact-one__form comment-one__form contact-form-validated" novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="comment-form__input-box">
-                                <input type="text" placeholder="Your name" name="name">
-                            </div>
+                {{ form:hubungi }}
+                    {{ if success }}
+                        <div class="bg-green-300 text-white p-2 text-center">
+                            {{ success }}
                         </div>
-                        <div class="col-xl-12">
-                            <div class="comment-form__input-box">
-                                <input type="email" placeholder="Email address" name="email">
+                    {{ else }}
+                        {{ if errors }}
+                            <div class="bg-red-300 text-white p-2">
+                                {{ errors }}
+                                    {{ value }}<br>
+                                {{ /errors }}
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12">
-                            <div class="comment-form__input-box">
-                                <textarea name="message" placeholder="Write message"></textarea>
+                        {{ /if }}
+                        {{ fields }}
+                            <div class="p-2">
+                                <label>{{ display }}</label>
+                                <div class="p-1">{{ field }}</div>
+                                {{ if error }}
+                                    <p class="text-gray-500">{{ error }}</p>
+                                {{ /if }}
                             </div>
+                        {{ /fields }}
+                        <div class="text-center">
                             <button type="submit" class="thm-btn comment-form__btn">Kirim Pesan</button>
                         </div>
-                    </div>
-                </form>
+                    {{ /if }}
+                {{ /form:hubungi }}
                 <div class="result"></div><!-- /.result -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->

@@ -1931,22 +1931,16 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
+  background-size: 100% 100% !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 7000ms ease;
-  transition: -webkit-transform 7000ms ease;
-  transition: transform 7000ms ease;
-  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
   z-index: 1;
 }
 
-.main-slider .swiper-slide-active .image-layer {
+/* .main-slider .swiper-slide-active .image-layer {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-}
+} */
 
 .main-slider .image-layer-overlay {
   position: absolute;
@@ -1960,9 +1954,9 @@ button {
 }
 
 .main-slider .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
-  padding-top: 300px;
-  padding-bottom: 300px;
   z-index: 2;
 }
 
